@@ -1,0 +1,66 @@
+{
+  "name": "Sample API",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.14.2",
+    "npm": "8.5.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "mocha --recursive",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliotkoss/sample-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elliotkoss/sample-api/issues"
+  },
+  "homepage": "https://github.com/elliotkoss/sample-api#readme",
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.4.2",
+    "@coinbase/wallet-sdk": "^3.1.0",
+    "@usedapp/core": "^1.0.1",
+    "aws-sdk": "^2.1157.0",
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "browserify-fs": "^1.0.0",
+    "cheerio": "^1.0.0-rc.12",
+    "concurrently": "^7.1.0",
+    "cookie-session": "^2.0.0",
+    "count-words": "^1.0.13",
+    "discord.js": "^14.3.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "express-enforces-ssl": "^1.1.0",
+    "lodash": "^4.17.21",
+    "merkletreejs": "^0.2.32",
+    "mongoose": "^6.2.10",
+    "passport": "^0.5.2",
+    "passport-ethereum-siwe": "^0.1.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-web3": "^0.1.7",
+    "path-parser": "^6.1.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "random-number-csprng": "^1.0.2",
+    "sendgrid": "^5.2.3",
+    "sequelize": "^6.20.1",
+    "siwe": "^1.1.6",
+    "stripe": "^8.217.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-arrays": "^2.2.0",
+    "mocha": "^10.0.0",
+    "sequelize-cli": "^6.4.1"
+  }
+}

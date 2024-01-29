@@ -1,0 +1,6 @@
+.DS_Store
+.editorconfig
+node_modules
+
+.env
+config/dev.override.js
