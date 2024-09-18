@@ -19,6 +19,12 @@ If this is the first time, you should run...
 npm install
 ```
 
+then navigate to the client directory and run...
+
+```shell
+npm install
+```
+
 To get the environment started...
 
 ```shell
